@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <title>Layout</title>
+
+</head>
+<body>
+
+<p th:text="${{date}}">asd</p>
+<p th:text="#{user.name}"></p>
+<p th:text="${student}">Okan</p>
+
+<a th:href="@{/hello}">click</a>
+<p>asdasd</p>
+
+<div>
+    <form th:method="post" th:action="@{/logout}">
+        <input type="submit" value="logout"/>
+    </form>
+</div>
+
+<div th:text="${#httpSession.getAttribute('csrf_token_for_session_attr')}"></div>
+</body>
+</html>
