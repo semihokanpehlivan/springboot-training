@@ -21,6 +21,13 @@ public class HelloController {
         return "home";
     }
 
+    @RequestMapping("/free")
+    public String free(ModelMap modelMap) {
+        String message = "This is free space";
+        modelMap.addAttribute("free", message);
+        return "free";
+    }
+
     @RequestMapping("/hello")
     public String hello(ModelMap modelMap) {
         Student student = new Student();
