@@ -67,3 +67,4 @@ crashlytics-build.properties
 
 #Logging file
 *.log
+/boot-logging.log
