@@ -1,4 +1,5 @@
 /Users/semihokan/springboot/qbloomy-data/src/main/java/com/qbloomy/repository/implementation/QuestionRepositoryImp.java
 /Users/semihokan/springboot/qbloomy-data/src/main/java/com/qbloomy/model/Question.java
+/Users/semihokan/springboot/qbloomy-data/src/main/java/com/qbloomy/configuration/HibernateConfiguration.java
 /Users/semihokan/springboot/qbloomy-data/src/main/java/com/qbloomy/DataMainApplication.java
 /Users/semihokan/springboot/qbloomy-data/src/main/java/com/qbloomy/repository/QuestionRepository.java

@@ -7,8 +7,10 @@
 /Users/semihokan/springboot/web/src/main/java/web/Student.java
 /Users/semihokan/springboot/web/src/main/java/web/configuration/ThymeleafView.java
 /Users/semihokan/springboot/web/src/main/java/web/configuration/ThymeleafViewDOMConfiguration.java
+/Users/semihokan/springboot/web/src/main/java/web/configuration/security/CsrfHandlerInterceptor.java
 /Users/semihokan/springboot/web/src/main/java/web/listener/ApplicationStartListenerImp.java
 /Users/semihokan/springboot/web/src/main/java/web/propertyconf/ConnectionSetting.java
 /Users/semihokan/springboot/web/src/main/java/web/listener/RequestListener.java
 /Users/semihokan/springboot/web/src/main/java/web/configuration/security/SecurityConfig.java
-/Users/semihokan/springboot/web/src/main/java/web/configuration/RequestDataValueProcessorConfiguration.java
+/Users/semihokan/springboot/web/src/main/java/web/configuration/security/CsrfTokenManager.java
+/Users/semihokan/springboot/web/src/main/java/web/configuration/CsrfRequestDataValueProcessor.java

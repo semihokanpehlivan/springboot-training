@@ -6,10 +6,8 @@ web/HelloController.class
 web/configuration/ThymeleafViewDOMConfiguration.class
 web/propertyconf/ConnectionSetting.class
 web/configuration/WebApplicationConfiguration.class
-web/configuration/RequestDataValueProcessorConfiguration.class
 web/listener/RequestListener.class
 web/listener/ApplicationStartListenerImp.class
 web/configuration/ThymeleafView.class
 web/MainApplication.class
 web/configuration/MessageSourceConfiguration.class
-web/configuration/security/WebSecurity.class
