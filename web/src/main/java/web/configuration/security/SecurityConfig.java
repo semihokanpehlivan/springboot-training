@@ -76,6 +76,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+    /**
+     * Configuration for api that only admin can access. Configuration on only "/free/api"
+     *
+     * @author Semih Okan Pehlivan
+     * @since 0.1
+     */
     @Configuration
     @Order(1)
     public static class FreeSecurityConfig extends WebSecurityConfigurerAdapter{
