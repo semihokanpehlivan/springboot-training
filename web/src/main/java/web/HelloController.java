@@ -28,6 +28,12 @@ public class HelloController {
         return "free";
     }
 
+    @RequestMapping("/free/api")
+    public String freeApi(ModelMap modelMap) {
+        modelMap.addAttribute("message", "for only admin user");
+        return "freeapi";
+    }
+
     @RequestMapping("/hello")
     public String hello(ModelMap modelMap) {
         Student student = new Student();

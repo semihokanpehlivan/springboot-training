@@ -2,6 +2,7 @@ package web.configuration.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -20,7 +21,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .inMemoryAuthentication()
                 .withUser("user")
                 .password("pass")
-                .roles("user");
+                .roles("USER")
+                .and()
+                .withUser("admin")
+                .password("pass")
+                .roles("USER","ADMIN");
     }
 
     @Override
@@ -69,5 +74,28 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 //                type of authentication
 
+    }
+
+    @Configuration
+    @Order(1)
+    public static class FreeSecurityConfig extends WebSecurityConfigurerAdapter{
+
+        @Override
+        protected void configure(HttpSecurity http) throws Exception {
+            http
+                    .antMatcher("/free/api")
+                    .authorizeRequests()
+                    .anyRequest()
+                    .hasRole("ADMIN")
+                    .and()
+
+                    .formLogin()
+                    .loginPage("/login")
+                    .passwordParameter("password")
+                    .usernameParameter("username")
+                    .permitAll()
+
+                    .and().httpBasic();
+        }
     }
 }
